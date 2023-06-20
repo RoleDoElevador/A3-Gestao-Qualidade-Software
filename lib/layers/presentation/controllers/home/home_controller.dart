@@ -27,13 +27,11 @@ class HomePageController {
   List<BackLogEntity> mockListBacklogs = [
 
    BackLogEntity(
-      title: 'teste',
+      title: 'Clear the street',
       priority: 'high',
       progressStatus: "in_progress",
       id: Isar.autoIncrement,
-      description: 'To numa mesa com quatro cadeiras, aqui já tem três enganados por ela'
-          ' bebendo esperando a rasteira, que tu vai levar dela, fica'
-          ' tranquilo que a aquarta cadeira te espera',
+      description: 'Clear all the trash tasks',
       initialData: DateTime.now(),
       finalData: DateTime.now()
    ),

@@ -8,13 +8,16 @@ class DataBaseInstance {
     database = openDB();
   }
 
-  Future<Isar> openDB() {
+  Future<Isar> openDB() async {
+
+
     if (Isar.instanceNames.isEmpty) {
       return Isar.open(
           [
             BackLogEntitySchema,
           ],
-          inspector: true
+          inspector: true,
+          directory: ''
       );
     }
     return Future.value(Isar.getInstance());
